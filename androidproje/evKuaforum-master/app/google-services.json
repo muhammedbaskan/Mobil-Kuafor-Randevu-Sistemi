@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "800695534638",
+    "project_id": "barberapp-9e2be",
+    "storage_bucket": "barberapp-9e2be.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:800695534638:android:0d1f7d9b055597ac508bbf",
+        "android_client_info": {
+          "package_name": "com.abaskan.evkuaforum"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "800695534638-63t1quqlr2ji7juugqr677m756d1m3rj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAoIdiA6OLt7QZm4wSdv41bQCikg3Gk9Oc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "800695534638-63t1quqlr2ji7juugqr677m756d1m3rj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

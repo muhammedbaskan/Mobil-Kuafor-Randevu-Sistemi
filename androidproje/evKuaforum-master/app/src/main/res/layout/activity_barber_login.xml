@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BarberActivity.BarberLoginActivity">
+
+    <TextView
+        android:id="@+id/loginBarberTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Kuaför Giriş"
+        android:textColor="@color/colorTextBlack"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/berber_logo1" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutLoginBarberName"
+        android:layout_width="360dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="36dp"
+        android:ems="10"
+        android:textColorHint="@color/colorLoginText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginBarberTitle">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/loginBarberEmail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawableStart="@drawable/icon_person"
+            android:drawableLeft="@drawable/icon_person"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:hint="E-Mail"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/colorTextBlack"
+            android:textColorHint="@color/colorTextBlack"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="274dp" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutLoginBarberPassword"
+        android:layout_width="360dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="36dp"
+        android:ems="10"
+        android:textColorHint="@color/colorLoginText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayoutLoginBarberName"
+        app:passwordToggleContentDescription="description"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/colorLoginText">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/loginBarberPassword"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawableStart="@drawable/icon_password"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:hint="Şifre"
+            android:inputType="textPassword"
+            android:textColor="@color/colorTextBlack"
+            android:textColorHint="@color/colorTextBlack"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.708"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="488dp" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/loginBarberButton"
+        android:layout_width="360dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="68dp"
+        android:backgroundTint="#FF5722"
+        android:onClick="barberLoginButtonClick"
+        android:text="Giriş Yap"
+        android:textColor="@color/colorLoginText"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayoutLoginBarberPassword" />
+
+    <TextView
+        android:id="@+id/loginBarberToSignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:onClick="barberSignupTextClick"
+        android:text="Üye Ol"
+        android:textColor="@color/colorTextBlack"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginBarberButton" />
+
+    <TextView
+        android:id="@+id/toCustomerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:onClick="toCustomerTextClick"
+        android:text="Kullanıcı Girişi İçin Tıklayın"
+        android:textColor="@color/colorTextBlack"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginBarberToSignup" />
+
+    <ImageView
+        android:id="@+id/berber_logo1"
+        android:layout_width="216dp"
+        android:layout_height="140dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/berberlogo"
+        tools:layout_editor_absoluteY="27dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
